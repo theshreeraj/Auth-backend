@@ -35,6 +35,10 @@ app.get("/", (req, res) => {
   res.send("Hello from server");
 });
 
+app.get('/test', (req,res)=>{
+  res.send("dummy api")
+})
+
 // signup api
 app.post("/signup", async (req, res) => {
   try {
